@@ -81,8 +81,8 @@ pytest -vv test_*
 
 # Time logging
 -   Preparing, reading some documentations, and thinking how to tackle this problem: about 1-2 days on, and off while driving, showering (best methods!)
--   Setting up the development environment: 15 minutes, I do thins everyday
--   Writing Django models up to working api routes 30 minutes, I do this everyday, too
+-   Setting up the development environment: 15 minutes, I do this pretty much everyday
+-   Writing Django models up to working api routes 30 minutes, I do this everyday, too, but with Django Ninja instead of DRF
 -   Django Nested Routers: about 2 hours of trying to understand the sparse documentations and how data is passed, I have never used this before. I think of this as a challenge to see how I learn new techs.
 -   Writing helper functions: less than 15 minutes
 -   Pytest normal cases and requirements, catching bugs: about 1.5 - 2 hours
