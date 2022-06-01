@@ -33,7 +33,7 @@ if os.getenv('ENV') == 'staging':
     ALLOWED_HOSTS = []
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ['*'] # SECURITY change this to specific host if possible
+    ALLOWED_HOSTS = ['*', 'django-school-api.herokuapp.com'] # SECURITY change this to specific host if possible
 
 
 # Application definition
