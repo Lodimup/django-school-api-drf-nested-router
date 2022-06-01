@@ -73,9 +73,10 @@ pytest -vv test_*
 3.  admin view for debugging/ quick edits
 4.  Test driven design with pytest (with conda plus pip install -r requirements.txt)
 5.  AWS Fargate serverless docker hosting
-6.  Docker compose local deploy with automatic exposing to the internet through cloudflare Argi (suitable for short client demo, team demo)
-7.  Heroku database setup (does this count as a bonus ?)
-8.  gunicorn was used in AWS deployment
+6.  Postgres deployed in AWS RDS
+7.  Docker compose local deploy with automatic exposing to the internet through cloudflare Argi (suitable for short client demo, team demo)
+8.  Heroku database setup (does this count as a bonus ?)
+9.  gunicorn was used in AWS deployment
 
 # Time logging
 -   Preparing, reading some documentations, and thinking how to tackle this problem: about 1-2 days on, and off while driving, showering (best methods!)
