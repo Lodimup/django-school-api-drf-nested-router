@@ -2,8 +2,8 @@ import requests
 import random
 
 # BASE_URL = 'http://127.0.0.1:8000'
-# BASE_URL = 'http://18.141.202.26:8000
-BASE_URL = 'https://django-school-api.herokuapp.com'
+BASE_URL = 'http://18.141.202.26:8000'
+# BASE_URL = 'https://django-school-api.herokuapp.com'
 
 def test_school_invalid_name_():
     # name too long
