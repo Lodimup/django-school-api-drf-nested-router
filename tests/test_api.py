@@ -3,7 +3,8 @@ from faker import Faker
 import random
 
 fake = Faker()
-BASE_URL = 'http://127.0.0.1:8000'
+# BASE_URL = 'http://127.0.0.1:8000'
+BASE_URL = 'https://django-school-api.herokuapp.com'
 
 def test_server_isonline():
     url = BASE_URL + '/admin'
