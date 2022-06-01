@@ -3,7 +3,7 @@ services:
     image: postgres:alpine
     environment:
       - POSTGRES_PASSWORD=${PG_PASSWORD}
-      - POSTGRES_DB=${PG_DB}
+      - POSTGRES_DB=${PG_DATABSE}
       - POSTGRES_USER=${PG_USER}
     command: postgres -c stats_temp_directory=/tmp
     restart: unless-stopped
