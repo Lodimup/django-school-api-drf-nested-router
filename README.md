@@ -1,5 +1,5 @@
 
-# development note
+# Development note
 
 Please see note for detailed exaplanations:
 
