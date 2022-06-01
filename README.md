@@ -8,6 +8,28 @@ https://cheerful-olivine-ef5.notion.site/Django-School-Management-System-DSMS-cf
 Sample usage of Django, Django Rest Framework, drf-nested-routers
 DEUBG=True is intentionally left on, to disable change environmental variable ENV to anything other thatn staging
 This is intended to be backend, all non matched routes are 404 by default
+# Milestones
+- [x]  Create Django App
+- [x]  Use Postgres
+- [x]  Use Pipenv
+- [x]  Stores sensitive information in .env (and not committing them!)
+- [x]  modles: student, first_name, last_name, student identification id as UUID4() but only 20 chars
+- [x]  models: school, name, max_student
+- [x]  Use DRF
+- [x]  Enable DRF API views
+- [x]  use ModelViewSet
+- [x]  use ModelSerializer
+- [x]  endpoint /students/ GET, POST
+- [x]  endpoint /schools/ GET, POST
+- [x]  endpoint /students/:id PUT, PATCH, DELETE
+- [x]  endpoint /schools/:id PUT, PATCH, DELETE
+- [x]  Automatic UUID for student upon creation
+- [x]  Disallow student to overflow school
+- [x]  Use Django Nested Routers
+- [x]  /schools/:id/students GET
+- [x]  /schools/:id/students POST
+- [x]  /schools/:id/students/:id GET, POST, PATCH, PUT, DELETE
+- [x]  /students/ still works
 # Deployments
 ## Heroku
 https://django-school-api.herokuapp.com/api/v1/students/
