@@ -31,6 +31,17 @@ pipenv run python manage.py runserver
 
 ```
 Look for a url similar to https://savage-co**********cloudflare.com in logs
+# Testings
+## usage
+Make sure to change BASE_URL according to which deployment you want to test
+```
+conda create --name pytest python=3.9.7
+conda activate pytest
+pip install -r requirements.txt
+cd tests
+pytest -vv test_*
+
+```
 # Bonus
 1.  Notion development documentation
 2.  Use deploy Postgres via docker with data persistence
@@ -42,7 +53,6 @@ Look for a url similar to https://savage-co**********cloudflare.com in logs
 8.  gunicorn was used in AWS deployment
 
 # Time logging
-
 -   Preparing, reading some documentations, and thinking how to tackle this problem: about 1-2 days on, and off while driving, showering (best methods!)
 -   Setting up the development environment: 15 minutes, I do thins everyday
 -   Writing Django models up to working api routes 30 minutes, I do this everyday, too
@@ -53,3 +63,7 @@ Look for a url similar to https://savage-co**********cloudflare.com in logs
 -   Heroku deplotment: 30 minutes
 -   AWS deployment: 2 hours
 -   Docker local deployment with tunnels to the internet: 30 minutes
+
+
+# Caviets
+Some config files are duplicated to root to make Heroku happy.
