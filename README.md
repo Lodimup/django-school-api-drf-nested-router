@@ -21,6 +21,15 @@ cloudflare argo tunnels your applications to the internet through Cloludflare wi
 docker compose --env-file ./src/app/app/.env up --build --force-recreate
 
 ```
+## pipenv with postgres in docker
+```
+cd postgres
+docker compose up --build --force-recreate
+cd src/app
+conda activate <env>
+pipenv run python manage.py runserver
+
+```
 Look for a url similar to https://savage-co**********cloudflare.com in logs
 # Bonus
 1.  Notion development documentation
@@ -30,6 +39,7 @@ Look for a url similar to https://savage-co**********cloudflare.com in logs
 5.  AWS Fargate serverless docker hosting
 6.  Docker compose local deploy with automatic exposing to the internet through cloudflare Argi (suitable for short client demo, team demo)
 7.  Heroku database setup (does this count as a bonus ?)
+8.  gunicorn was used in AWS deployment
 
 # Time logging
 
