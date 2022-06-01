@@ -13,7 +13,7 @@ This is intended to be backend, all non matched routes are 404 by default
 - [x]  Use Postgres
 - [x]  Use Pipenv
 - [x]  Stores sensitive information in .env (and not committing them!)
-- [x]  modles: student, first_name, last_name, student identification id as UUID4() but only 20 chars
+- [x]  models: student, first_name, last_name, student identification id as UUID4() but only 20 chars
 - [x]  models: school, name, max_student
 - [x]  Use DRF
 - [x]  Enable DRF API views
