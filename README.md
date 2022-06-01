@@ -87,7 +87,7 @@ pytest -vv test_*
 -   Pytest normal cases and requirements, catching bugs: about 1.5 - 2 hours
 -   Pytest edge cases: 30 minutes
 -   Heroku deplotment: 30 minutes
--   AWS deployment: 2 hours
+-   AWS deployment: 2 hours, built image on a Mac M1, forgot to specify amd64 architechture since AWS ECS Fargate is arm64 :')
 -   Docker local deployment with tunnels to the internet: 30 minutes
 
 
