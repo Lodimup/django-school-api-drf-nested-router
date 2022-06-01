@@ -11,6 +11,7 @@ gunicorn = "*"
 psycopg2-binary = "*"
 drf-nested-routers = "*"
 rich = "*"
+whitenoise = "*"
 
 [dev-packages]
 
