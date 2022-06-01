@@ -30,10 +30,10 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 # disables debug when ENV is not staging
 if os.getenv('ENV') == 'staging':
     DEBUG = True
-    ALLOWED_HOSTS = []
+    ALLOWED_HOSTS = ['*']
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ['*', 'django-school-api.herokuapp.com'] # SECURITY change this to specific host if possible
+    ALLOWED_HOSTS = [] # SECURITY change this to specific host if possible
 
 
 # Application definition
