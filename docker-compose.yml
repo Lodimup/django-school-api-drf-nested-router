@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  migrator:
+    env_file:
+        - ./src/app/app/.env
+    build: ./src
+    command: >
+      sh -c "sleep 10 && cd app &&
+      python manage.py migrate"
+    depends_on:
+      - postgres
+      - app
+    expose:
+      - "8000"
+    environment:
+      - ENV
+      - PG_HOST=postgres
+      - PG_DATABASE
+      - PG_USER
+      - PG_PORT
+      - PG_PASSWORD
+      - DJANGO_SECRET_KEY
+    networks:
+      - postgres_net
+  app:
+    env_file:
+        - ./src/app/app/.env
+    build: ./src
+    restart: unless-stopped
+    command: sh -c "gunicorn --chdir app app.wsgi --workers 4 -b 0.0.0.0:8000 --timeout 120 --log-level=debug"
+    depends_on:
+      - postgres
+    expose:
+      - "8000"
+    ports:
+      - 8000:8000
+    environment:
+      - ENV
+      - PG_HOST=postgres
+      - PG_DATABASE
+      - PG_USER
+      - PG_PORT
+      - PG_PASSWORD
+      - DJANGO_SECRET_KEY
+    networks:
+      - postgres_net
+      - tunnel_net
+  postgres:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_DB=${PG_DATABASE}
+      - POSTGRES_USER=${PG_USER}
+    command: postgres -c stats_temp_directory=/tmp
+    restart: unless-stopped
+    volumes:
+      - ./data_postgres:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    networks:
+      - postgres_net
+  cloudflared:
+    build: ./cloudflared
+    restart: always
+    volumes:
+      - ./data_cloudflared:/etc/cloudflared
+    command: --url http://app:8000  # quick tunnel to for testing
+    depends_on:
+      - app
+    networks:
+      - tunnel_net
+networks:
+  postgres_net:
+  tunnel_net:
