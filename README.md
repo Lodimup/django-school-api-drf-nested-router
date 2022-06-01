@@ -43,6 +43,7 @@ cloudflare argo tunnels your applications to the internet through Cloludflare wi
 docker compose --env-file ./src/app/app/.env up --build --force-recreate
 
 ```
+Look for a url similar to https://savage-co**********cloudflare.com/api/v1/students/ in logs
 ## pipenv with postgres in docker
 ```
 cd postgres
@@ -50,9 +51,9 @@ docker compose up --build --force-recreate
 cd src/app
 conda activate <env>
 pipenv run python manage.py runserver
-
 ```
-Look for a url similar to https://savage-co**********cloudflare.com in logs
+Proceed to 127.0.0.1:8000/api/v1/students/
+
 ## Notice
 AWS and Heroku deployments will be taken down by the end of June.
 # Testings
