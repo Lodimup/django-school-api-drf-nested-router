@@ -31,6 +31,8 @@ pipenv run python manage.py runserver
 
 ```
 Look for a url similar to https://savage-co**********cloudflare.com in logs
+## Notice
+AWS and Heroku deployments will be taken down by the end of June.
 # Testings
 ## usage
 Make sure to change BASE_URL according to which deployment you want to test
