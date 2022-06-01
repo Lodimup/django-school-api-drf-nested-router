@@ -6,7 +6,7 @@ Please see note for detailed exaplanations:
 https://cheerful-olivine-ef5.notion.site/Django-School-Management-System-DSMS-cf3cdecb4362416f91cbc2aa3ea4a3e4
 # django-school-api-drf-nested-router
 Sample usage of Django, Django Rest Framework, drf-nested-routers
-DEUBG=True is intentionally left on, to disable change environmental variable ENV to anything other thatn staging
+DEUBG=True is intentionally left on, to disable change environmental variable ENV to anything other than staging
 This is intended to be backend, all non matched routes are 404 by default
 # Milestones
 - [x]  Create Django App
