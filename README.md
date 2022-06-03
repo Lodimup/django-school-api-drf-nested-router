@@ -6,7 +6,7 @@ Please see note for detailed exaplanations:
 https://cheerful-olivine-ef5.notion.site/Django-School-Management-System-DSMS-cf3cdecb4362416f91cbc2aa3ea4a3e4
 # django-school-api-drf-nested-router
 Sample usage of Django, Django Rest Framework, drf-nested-routers
-DEUBG=True is intentionally left on, to disable change environmental variable ENV to anything other thatn staging
+DEUBG=True is intentionally left on, to disable change environmental variable ENV to anything other than staging
 This is intended to be backend, all non matched routes are 404 by default
 # Milestones
 - [x]  Create Django App
@@ -73,20 +73,22 @@ pytest -vv test_*
 3.  admin view for debugging/ quick edits
 4.  Test driven design with pytest (with conda plus pip install -r requirements.txt)
 5.  AWS Fargate serverless docker hosting
-6.  Docker compose local deploy with automatic exposing to the internet through cloudflare Argi (suitable for short client demo, team demo)
-7.  Heroku database setup (does this count as a bonus ?)
-8.  gunicorn was used in AWS deployment
+6.  Postgres deployed in AWS RDS
+7.  USED AWS ECS Registry
+8.  Docker compose local deploy with automatic exposing to the internet through cloudflare Argi (suitable for short client demo, team demo)
+9.  Heroku database setup (does this count as a bonus ?)
+10.  gunicorn was used in AWS deployment
 
 # Time logging
 -   Preparing, reading some documentations, and thinking how to tackle this problem: about 1-2 days on, and off while driving, showering (best methods!)
--   Setting up the development environment: 15 minutes, I do thins everyday
--   Writing Django models up to working api routes 30 minutes, I do this everyday, too
+-   Setting up the development environment: 15 minutes, I do this pretty much everyday
+-   Writing Django models up to working api routes 30 minutes, I do this everyday, too, but with Django Ninja instead of DRF
 -   Django Nested Routers: about 2 hours of trying to understand the sparse documentations and how data is passed, I have never used this before. I think of this as a challenge to see how I learn new techs.
 -   Writing helper functions: less than 15 minutes
 -   Pytest normal cases and requirements, catching bugs: about 1.5 - 2 hours
 -   Pytest edge cases: 30 minutes
 -   Heroku deplotment: 30 minutes
--   AWS deployment: 2 hours
+-   AWS deployment: 2 hours, built image on a Mac M1, forgot to specify amd64 architechture since AWS ECS Fargate is amd64 and M1 is arm64 :')
 -   Docker local deployment with tunnels to the internet: 30 minutes
 
 
