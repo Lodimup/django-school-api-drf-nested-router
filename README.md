@@ -34,7 +34,7 @@ This is intended to be backend, all non matched routes are 404 by default
 ## Heroku
 https://django-school-api.herokuapp.com/api/v1/students/
 ## AWS ECS Fargate
-http://18.141.202.26:8000/api/v1/students/
+http://18.140.53.106:8000/api/v1/students/
 ## docker-compose
 Docker compose with quick tunnel to the internet for collaboration
 cloudflare argo tunnels your applications to the internet through Cloludflare without exposing any ports
