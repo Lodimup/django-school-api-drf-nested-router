@@ -78,6 +78,7 @@ pytest -vv test_*
 8.  Docker compose local deploy with automatic exposing to the internet through cloudflare Argi (suitable for short client demo, team demo)
 9.  Heroku database setup (does this count as a bonus ?)
 10.  gunicorn was used in AWS deployment
+11. Serve static file without CDN/Bucket with Whitenoise
 
 # Time logging
 -   Preparing, reading some documentations, and thinking how to tackle this problem: about 1-2 days on, and off while driving, showering (best methods!)
