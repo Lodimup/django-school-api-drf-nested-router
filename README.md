@@ -1,7 +1,7 @@
 
 # Development note
 
-Please see note for detailed exaplanations:
+Please see note for detailed explainations:
 
 https://cheerful-olivine-ef5.notion.site/Django-School-Management-System-DSMS-cf3cdecb4362416f91cbc2aa3ea4a3e4
 # django-school-api-drf-nested-router
