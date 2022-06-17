@@ -56,6 +56,7 @@ Proceed to 127.0.0.1:8000/api/v1/students/
 
 ## Notice
 AWS and Heroku deployments will be taken down by the end of June.
+💡 Paid services are already taken down.  
 # Testings
 ## usage
 Make sure to change BASE_URL according to which deployment you want to test
