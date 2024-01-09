@@ -1,4 +1,5 @@
-
+# Deprecated
+see: https://github.com/Lodimup/next-django
 # Development note
 
 Please see note for detailed explainations:
